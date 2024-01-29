@@ -1,12 +1,17 @@
 import React from "react";
 import {InputContainer} from "./styles";
+import PropTypes from "prop-types";
 
-const Input = () => {
+const Input = ({value, onChange}) => {
     return (
         <InputContainer>
-            <input/>
+            <input value={value} onChange={onChange}/>
         </InputContainer>
     )
 }
 
+Input.propTypes = {
+    value: PropTypes.string,
+    onChange: PropTypes.func
+}
 export default Input;
