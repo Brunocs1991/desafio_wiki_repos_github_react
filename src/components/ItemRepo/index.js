@@ -1,5 +1,5 @@
 import React from "react";
-import {ItemContaider} from "./styles";
+import {ItemContaider, Remover} from "./styles";
 import PropTypes from "prop-types";
 
 const ItemRepo = ({repo: {full_name, html_url, name, id} , remove}) => {
@@ -9,7 +9,7 @@ const ItemRepo = ({repo: {full_name, html_url, name, id} , remove}) => {
             <p>{full_name}</p>
             <a href={html_url} target={"_blank"} rel="noreferrer">Ver repositório</a>
             <br/>
-            <button className={"remover"} onClick={() => remove(id)}>Remover</button>
+            <Remover className={"remover"} onClick={() => remove(id)}>Remover</Remover>
             <hr/>
         </ItemContaider>
     )

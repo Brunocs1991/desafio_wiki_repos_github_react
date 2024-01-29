@@ -14,13 +14,7 @@ export const ItemContaider = styled.div`
         margin-bottom: 20px;
     }
 
-
-
-    hr {
-        color: #FAFAFA60;
-        margin: 20px 0;
-    }
-    .remover {
+    button.remover {
         color: #FF0000;
         margin-top: 20px;
         background: none;
@@ -31,4 +25,20 @@ export const ItemContaider = styled.div`
         font-family: inherit;
         font-size: inherit;
     }
+
+    hr {
+        color: #FAFAFA60;
+        margin: 20px 0;
+    }
+`
+export const Remover = styled.button`
+    color: #FF0000;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: inherit;
 `
